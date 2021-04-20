@@ -1,0 +1,26 @@
+<CanvasWidget xmlns="runtime-namespace:Game" Size="600, 380" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+  <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+  <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="10, 10">
+    <LabelWidget Name="LevelFactorDialog.Title" Font="{Fonts/Pericles32}" Color="255, 255, 255" HorizontalAlignment="Center" Margin="0, 5"/>
+    <ScrollPanelWidget Direction="Vertical" HorizontalAlignment="Center" Margin="20, 5">
+      <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
+        <LabelWidget Name="LevelFactorDialog.Description" Font="{Fonts/Pericles18}" Color="128, 128, 128" HorizontalAlignment="Center" TextAnchor="HorizontalCenter" WordWrap="true"/>
+        <CanvasWidget Size="0, 10"/>
+        <LabelWidget Text="Current multipliers:" Font="{Fonts/Pericles18}" Color="255, 255, 255" HorizontalAlignment="Center" Margin="0, 5"/>
+        <CanvasWidget Size="0, 10"/>
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+          <LabelWidget Size="200, -1" Name="LevelFactorDialog.Names" Font="{Fonts/Pericles18}" Color="128, 128, 128" TextAnchor="Right" WordWrap="true"/>
+          <LabelWidget Size="200, -1" Name="LevelFactorDialog.Values" Font="{Fonts/Pericles18}" Color="128, 128, 128" TextAnchor="HorizontalCenter" WordWrap="true"/>
+        </StackPanelWidget>
+        <RectangleWidget FillColor="64, 64, 64" OutlineColor="0, 0, 0, 0" Size="350, 2" HorizontalAlignment="Center" Margin="0, 4"/>
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+          <LabelWidget Size="200, -1" Name="LevelFactorDialog.TotalName" Font="{Fonts/Pericles18}" Color="255, 255, 255" TextAnchor="Right"/>
+          <LabelWidget Size="200, -1" Name="LevelFactorDialog.TotalValue" Font="{Fonts/Pericles18}" Color="255, 255, 255" TextAnchor="HorizontalCenter"/>
+        </StackPanelWidget>
+      </StackPanelWidget>
+    </ScrollPanelWidget>
+    <BevelledButtonWidget Name="LevelFactorDialog.OK" Style="{Styles/ButtonStyle_160x60}" Text="OK" HorizontalAlignment="Center" VerticalAlignment="Far" Margin="0, 5"/>
+  </StackPanelWidget>
+
+</CanvasWidget>

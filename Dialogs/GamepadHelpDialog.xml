@@ -1,0 +1,79 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <CanvasWidget Size="680, 420" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+
+      <LabelWidget Font="{Fonts/Pericles32}" Text="Gamepad Controls" HorizontalAlignment="Center"/>
+
+      <CanvasWidget Margin="20, 15">
+
+        <RectangleWidget FillColor="0, 0, 0, 0" OutlineColor="128, 128, 128, 128" OutlineThickness="1" />
+
+        <ScrollPanelWidget Margin="4, 4" Direction="Vertical">
+
+          <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+
+            <StackPanelWidget Direction="Vertical">
+              <LabelWidget Text="Left Stick" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Right Stick" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Left Trigger" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Right Trigger" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Left Thumb Click" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" _ExcludePlatforms="Ios"/>
+              <LabelWidget Text="Right Thumb Click" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" _ExcludePlatforms="Ios"/>
+              <LabelWidget Text="Left Shoulder" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Right Shoulder" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="A" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="B" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="X" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Y" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="D-Pad Up" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="D-Pad Down" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="D-Pad Left/Right" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="D-Pad Up/Down" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Back/Select/Pause" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="Left Trigger + A" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="2xA" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+              <LabelWidget Text="A/Right Shoulder" Font="{Fonts/Pericles18}" HorizontalAlignment="Center" />
+            </StackPanelWidget>
+
+            <CanvasWidget Size="16, 0" />
+
+            <StackPanelWidget Direction="Vertical">
+              <LabelWidget Text="movement" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="looking" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="place block, use, interact" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="dig, attack, aim" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="mount creature or vehicle" Font="{Fonts/Pericles18}" Color="160, 160, 160" _ExcludePlatforms="Ios"/>
+              <LabelWidget Text="change camera mode" Font="{Fonts/Pericles18}" Color="160, 160, 160" _ExcludePlatforms="Ios"/>
+              <LabelWidget Text="edit block or item" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="toggle sneaking" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="jump, drag items" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="drop active item, cancel" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="open inventory panel" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="open body panel" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="mount creature or vehicle" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="change camera mode" Font="{Fonts/Pericles18}" Color="160, 160, 160"/>
+              <LabelWidget Text="change active slot" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="scroll, prev/next page" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="show game menu" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="auto move inventory item" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="toggle fly mode (creative)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+              <LabelWidget Text="fly up/down (creative)" Font="{Fonts/Pericles18}" Color="160, 160, 160" />
+            </StackPanelWidget>
+          </StackPanelWidget>
+
+        </ScrollPanelWidget>
+
+      </CanvasWidget>
+
+      <StackPanelWidget HorizontalAlignment="Center">
+        <BevelledButtonWidget Name="OkButton" Text="OK" Style="{Styles/ButtonStyle_160x60}"  />
+        <CanvasWidget Size="40, 0" />
+        <BevelledButtonWidget Name="HelpButton" Text="Help" Style="{Styles/ButtonStyle_160x60}" />
+      </StackPanelWidget>
+      
+    </StackPanelWidget>
+
+  </CanvasWidget>
+</CanvasWidget>

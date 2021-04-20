@@ -1,0 +1,4 @@
+<StackPanelWidget xmlns="runtime-namespace:Game" Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2, 0">
+  <LabelWidget Name="SelectExternalContentProvider.Text" Font="{Fonts/Pericles32}" Color="255, 255, 255" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 2"/>
+  <LabelWidget Name="SelectExternalContentProvider.Details" Font="{Fonts/Pericles18}" WordWrap="true" Color="128, 128, 128" TextAnchor="HorizontalCenter" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 2"/>
+</StackPanelWidget>

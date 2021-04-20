@@ -1,0 +1,47 @@
+<Screen xmlns="runtime-namespace:Game">
+
+  <PanoramaWidget />
+
+  <StackPanelWidget Direction="Vertical">
+
+    <CanvasWidget Size="0, Infinity" />
+    
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center">
+      <RectangleWidget Name="Logo" Size="800, 100" OutlineColor="0, 0, 0, 0" HorizontalAlignment="Center" FillColor="255, 255, 255" Margin="0, 0" Subtexture="{Textures/Gui/Logo}" />
+      <CanvasWidget Size="0, 5" />
+      <LabelWidget Name="Version" Font="{Fonts/Pericles12}" Text="" HorizontalAlignment="Center" Color="64, 192, 64" DropShadow="true" />
+    </StackPanelWidget>
+
+    <CanvasWidget Size="0, Infinity" />
+
+    <MotdWidget Size="Infinity, 60"/>
+    
+    <CanvasWidget Size="0, Infinity" />
+
+    <StackPanelWidget HorizontalAlignment="Center" Direction="Vertical" Margin="0, 0">
+      <StackPanelWidget HorizontalAlignment="Center" >
+        <BevelledButtonWidget Name="Play" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" Margin="10, 4" Text="Play" />
+        <BevelledButtonWidget Name="Content" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" Margin="10, 4" Text="Content" />
+      </StackPanelWidget>
+      <StackPanelWidget HorizontalAlignment="Center">
+        <BevelledButtonWidget Name="Settings" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" Margin="10, 4" Text="Settings" />
+        <BevelledButtonWidget Name="Help" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" Margin="10, 4" Text="Help" />
+      </StackPanelWidget>
+      <BevelledButtonWidget Name="Buy" Style="{Styles/ButtonStyle_310x60}" HorizontalAlignment="Center" Margin="10, 4" Text="Full Version..." IsVisible="false" />
+    </StackPanelWidget>
+
+    <CanvasWidget Size="0, Infinity" />
+
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" Margin="0, 4">
+      <StackPanelWidget HorizontalAlignment="Center">
+        <LabelWidget Text="Copyright 2011-2019 Candy Rufus Games." Color="64, 192, 64" Font="{Fonts/Pericles12}" VerticalAlignment="Center" DropShadow="true"/>
+        <LabelWidget Text=" Check " Color="64, 192, 64" Font="{Fonts/Pericles12}" VerticalAlignment="Center" DropShadow="true" _ExcludePlatforms="Ios" />
+        <LinkWidget Name="Link" Text="kaalus.wordpress.com" Color="255, 255, 255, 255" Font="{Fonts/Pericles12u}" VerticalAlignment="Center" Url="http://kaalus.wordpress.com" DropShadow="true" _ExcludePlatforms="Ios" />
+        <LabelWidget Text=" for more information." Color="64, 192, 64" Font="{Fonts/Pericles12}" VerticalAlignment="Center" DropShadow="true" _ExcludePlatforms="Ios" />
+      </StackPanelWidget>
+
+    </StackPanelWidget>
+
+  </StackPanelWidget>
+
+</Screen>
